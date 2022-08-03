@@ -1,0 +1,97 @@
+/*  SECTIONS  */
+.sectiondet {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  cldetUMN SETUP  */
+.cldet {
+	display: block;
+	float:left;
+
+}
+.cldet:first-child { margin-left: 0; }
+
+/*  GROUPdetING  */
+.groupdet:before,
+.groupdet:after { content:""; display:table; }
+.groupdet:after { clear:both;}
+.groupdet { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWO  */
+.sp2 {
+	width: 100%;
+}
+.sp1 {
+	width: 40%;
+    color: black;
+}
+
+.ulDet{
+    background-color: #ffffff;
+}
+
+h2{
+    margin-top: 41px;
+    font-weight: 600;
+}
+.divStyle{
+    margin-left: 30px;
+    width: 90%;
+
+}
+
+.categ{
+    color: black;
+    text-decoration: underline;
+    margin: 17px 20% 8px 12%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.cldet { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.sp2, .sp1 { width: 100%; }
+}
+
+.the-granny-joke{
+    width: 346px;
+    height: 60px;
+    font-size: 40px;
+    color: #cfb995;
+    font-family: Montserrat;
+    line-height: 1.5;
+    font-weight: 600;
+    margin: 41px 368px 10px 16px;
+}
+
+.card1{
+    width: 730px;
+    height: 243px;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 600;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin: 50px 0 31px 20px;
+    text-align: center;
+    padding: 14px 0 14px 0;
+}
+
+.card2{
+    width: 30%;
+    height: auto;
+    font-size: 15px;
+    font-family: Montserrat;
+    font-weight: 600;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin: 50px 0 31px 20px;
+    text-align: center;
+    padding: 14px 0 14px 0;
+}

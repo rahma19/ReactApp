@@ -1,0 +1,144 @@
+/*  SECTIONS  */
+.sec {
+    clear: both;
+    padding: 0px;
+    margin: 50px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+    display: block;
+    float: left;
+}
+
+.col:first-child {
+    margin-left: 0;
+}
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+    /* For IE 6/7 */
+}
+
+/*  GRID OF THREE  */
+.span_3_of_3 {
+    width: 100%;
+}
+
+.span_2_of_3 {
+    width: 100%;
+}
+
+.span_1_of_3 {
+    width: 33.33%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+
+    .span_3_of_3,
+    .span_2_of_3,
+    .span_1_of_3 {
+        width: 100%;
+    }
+}
+
+.container{
+    width: 100%;
+    background-color: white;  
+}
+
+.The-Joke-Bible {
+    width: 350px;
+    height: 72px;
+    margin: 0 174px 0 57px;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #cfb995;
+}
+
+.card {
+background-color: #ffffff;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;
+margin: 40px 31px;
+padding: 16px;
+width: 360px;
+height: 264px;
+}
+.a-lawyer-dies-and-go{
+width: 328px;
+height: 154px;
+margin: 6px 0 68px 31px;
+font-family: Montserrat;
+font-size: 14px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.57;
+letter-spacing: normal;
+color: #303030
+}
+
+.Lawyer-Joke{ width: 206px ;
+    height: 20px;
+margin: 0 0 6px 8px;
+ font-family: Montserrat;
+font-size: 16px;
+ font-weight:600;
+font-stretch: normal;
+font-style:normal;
+line-height: 1.25;
+letter-spacing: normal;
+color: #303030;
+}
+
+.butt{
+    width: 250px ;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid #cfb995;
+    background-color: transparent;
+    color:  #cfb995;
+    font-weight: 500;
+    margin: 50px;
+
+}
+
+.logo{
+pad: 2px;
+}
+
+.card_buttom{
+    position: relative;
+    float: right;
+    height:68px ;
+    width: 100px;
+    color: #cfb995;
+  
+
+}
+
+.sectionFoot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

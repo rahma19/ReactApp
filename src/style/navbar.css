@@ -1,0 +1,196 @@
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+	background-color: #5e5e5e;
+	color: #ffffff;
+
+}
+
+.dispNav{
+	width: 50%;
+	margin-left:  40% ;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	/* float:left; */
+	margin: 0%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWO  */
+.span_1_of_2 {
+	width: 100%;
+	position: relative;
+}
+
+
+
+element {
+	--white-two: #ffffff;
+  }
+
+.menu{
+	display: flex;
+	background-color: #1e1e1e;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+}
+
+
+
+.The-Joke-Bible {
+	position: absolute;
+	width: 350px;
+	height: 72px;
+	margin: 10% 10% 0 0;
+	font-family: Montserrat;
+	font-weight: normal;
+	 font-stretch: normal;
+	font-style: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: center;
+	color: #cfb995;
+}
+
+.span_3_of_3 { width: 33.33%; }
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+
+.SO-FUNKTIONIERTS {
+    width: 158px;
+    height: 19px;
+    margin: 20px 64px 21px 341px;
+    font-family: Montserrat;
+   font-size: 15px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+	
+}
+
+.menu-title {
+    width: 50px;
+    height: 19px;
+    padding: 20px 64px 21px;
+    font-family: Montserrat;
+   font-size: 15px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+	text-align: end;
+}
+
+.menu-title-select{
+	border: none;
+	/* color: #ffffff; */
+	outline: none;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #1e1e1e;
+  }
+  
+  li {
+	float: left;
+  }
+  
+select{
+	background: none;
+	border: none;
+}
+
+  li a {
+	display: block;
+	color: white;
+	text-align: center;
+	font-size: 15px;
+    font-weight: 600;
+	/* padding: 14px 16px; */
+	text-decoration: none;
+	font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+	width: 158px;
+	margin: 20px 20px 20px 0;
+    font-family: Montserrat;
+    height: 19px;
+    
+  }
+
+  .active{
+	float: right;
+	background-color: #cfb995;
+  }
+
+.joke{
+	color: #ffffff;
+	}
+.joke-bible-text{
+	position: absolute;
+	top: 22%;
+	
+}
+
+.joke-bible-container{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.daily-laughs{
+	color: white;
+	position: absolute;
+	top: 22%;
+    /* height: 19px; */
+   font-size: 30px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+
+}
+
+.search{
+	width: 500px;
+	height: 42px;
+	position: absolute;
+	top: 37%;
+	background-color: rgba(13, 13, 13, 0.5);
+	border: 1px solid #ffffff;
+}

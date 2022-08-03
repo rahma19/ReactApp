@@ -21,20 +21,20 @@ export default function Home() {
   }
 
   return (
-    
+
     <div className="container">
       <div className="sec group">
         <hr></hr>
 
         {stateOptions.slice(0, visible).map((localState, index) => (
-          <Link to={`/products/${product.id}`}>
           <div className="card col span_1_of_3" key={localState.id}>
-            <p className="Lawyer-Joke">{
-              localState.categories[0] ? localState.categories[0] : 'Uncategorized'}</p>
-            <div className="a-lawyer-dies-and-go">{localState.value}</div>
-            <div className="card_buttom"> SEE STATS <img src={logo} alt="arrow" /> </div>
+            <Link to={`/jokeDetail/${localState.id}`}>
+              <p className="Lawyer-Joke">{
+                localState.categories[0] ? localState.categories[0] : 'Uncategorized'}</p>
+              <div className="a-lawyer-dies-and-go">{localState.value}</div>
+              <div className="card_buttom"> SEE STATS <img src={logo} alt="arrow" /> </div>
+            </Link>
           </div>
-        </Link>
         ))}
       </div>
       <div className="sectionFoot footerr elem">

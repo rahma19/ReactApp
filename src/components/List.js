@@ -1,6 +1,5 @@
 import React from "react";
 import "../style/card.css";
-import logo from '../assets/assets_Homework_Front-End_01/path-copy-3.png';
 
 export default function List() {
 

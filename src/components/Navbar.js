@@ -12,11 +12,11 @@ export default function Navbar() {
                     <li><a href="#home">SO FUNKTIONIERT'S</a></li>
                     <li><a href="#news">SONDERANGEBOTE</a></li>
                     <li class="active" ><a href="#about"> <select>
-                        <option><span className="joke">MEIN BEREICH</span></option>
-                        <option>My published jokes</option>
-                        <option>My saved jokes</option>
-                        <option>Account information</option>
-                        <option>Publish new joke</option>
+                        <option value={1}><span className="joke">MEIN BEREICH</span></option>
+                        <option value={2}>My published jokes</option>
+                        <option value={3}>My saved jokes</option>
+                        <option value={4}>Account information</option>
+                        <option value={5}>Publish new joke</option>
                     </select></a></li>
                 </div>
             </ul>

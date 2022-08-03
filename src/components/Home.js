@@ -3,6 +3,7 @@ import "../style/home.css";
 import axios from "axios";
 import '../App.css';
 import logo from '../assets/assets_Homework_Front-End_01/path-copy-3.png';
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const baseURL = "https://api.chucknorris.io/jokes/search?query=all";
@@ -20,17 +21,20 @@ export default function Home() {
   }
 
   return (
+    
     <div className="container">
       <div className="sec group">
         <hr></hr>
 
         {stateOptions.slice(0, visible).map((localState, index) => (
+          <Link to={`/products/${product.id}`}>
           <div className="card col span_1_of_3" key={localState.id}>
             <p className="Lawyer-Joke">{
               localState.categories[0] ? localState.categories[0] : 'Uncategorized'}</p>
             <div className="a-lawyer-dies-and-go">{localState.value}</div>
             <div className="card_buttom"> SEE STATS <img src={logo} alt="arrow" /> </div>
           </div>
+        </Link>
         ))}
       </div>
       <div className="sectionFoot footerr elem">

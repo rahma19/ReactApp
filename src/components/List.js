@@ -1,24 +1,26 @@
 import React from "react";
 import "../style/card.css";
+import logo from '../assets/assets_Homework_Front-End_01/path-copy-3.png';
 
 export default function List() {
 
     const categories = [
-        { id: 1, value: 'Ford', color: '#ff5b5b' },
-        { id: 2, value: 'BMW', color: '#ff915b' },
-        { id: 2, value: 'BMW', color: '#ffbe5b' },
-        { id: 2, value: 'BMW', color: '#ffdf5b' },
-        { id: 2, value: 'BMW', color: '#8fe360' },
-        { id: 2, value: 'BMW', color: '#57e690' },
-        { id: 2, value: 'BMW', color: '#57dbe6' },
-        { id: 3, value: 'Audi', color: 'none' }
+        { id: 1, value: 'ADULT JOKES', color: '#ff5b5b',textCol:'white' },
+        { id: 2, value: 'DAD JOKES', color: '#ff915b',textCol:'white'  },
+        { id: 3, value: 'CHRISTMAS JOKES', color: '#ffbe5b',textCol:'white'  },
+        { id: 4, value: 'JOB JOKES', color: '#ffdf5b',textCol:'grey'  },
+        { id: 5, value: 'BIRTHDAY JOKES', color: '#8fe360',textCol:'white'  },
+        { id: 6, value: 'SOCIAL JOKES', color: '#57e690' ,textCol:'white' },
+        { id: 7, value: 'PUNS', color: '#57dbe6',textCol:'white'  },
+        { id: 8, value: 'VIEW ALL', color: 'none',textCol:'#cfb995'  }
     ];
 
     return (
         <div className=" sec group">
-            {categories.map((categ) => (
-                <div style={{ backgroundColor: categ.color }} className="cards col span_1_of_3" key={categ.id}>
-                    <div >{categ.value}</div>
+            {categories.map((categ,index) => (
+                
+                <div style={{ backgroundColor: categ.color ,color:categ.textCol}} className="cards col span_1_of_3" key={categ.id}>
+                    <div >{categ.value} </div>
                 </div>
             ))}
         </div>

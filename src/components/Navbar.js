@@ -1,6 +1,7 @@
 import React from "react";
 import "../style/navbar.css";
 import logo from '../assets/assets_Homework_Front-End_01/bitmap.png';
+import search from '../assets/assets_Homework_Front-End_01/search-copy.png';
 import '../App.css';
 
 export default function Navbar() {
@@ -25,7 +26,7 @@ export default function Navbar() {
                     <p className="The-Joke-Bible">The Joke Bible</p>
                 </div>
                 <p className="daily-laughs">Daily Laughs for you and yours</p>
-                <input className="span_1_of_2 search"></input>
+                <input className="span_1_of_2 search"></input>  <img src={search} className='searchh' alt="img" />
             </div>
 
         </div>

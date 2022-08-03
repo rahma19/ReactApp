@@ -194,3 +194,11 @@ select{
 	background-color: rgba(13, 13, 13, 0.5);
 	border: 1px solid #ffffff;
 }
+
+.searchh{
+	width: 30px;
+	height: 32px;
+	position: absolute;
+	top: 38%;
+	left: 64%;
+}

@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import List from "./components/List";
+import { Link, Route, Switch } from "react-router-dom";
 
 
 export default function App() {
@@ -31,6 +32,12 @@ export default function App() {
 
         <Home />
      <Footer />
+
+     <Switch>
+        <Route path="/products/:productId">
+          <ProductDetail />
+        </Route>
+      </Switch>
     </div>
   );
 }
